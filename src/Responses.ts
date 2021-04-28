@@ -7,6 +7,14 @@ const AuthResponses = {
     status: 400,
     body: { errMsg },
   }),
+  createSignUpSuccessResponse: (token: string) => ({
+    status: 200,
+    cookies: { token },
+  }),
+  createSignUpFailureResponse: (errMsg: string) => ({
+    status: 400,
+    body: { errMsg },
+  })
 }
 
 const ResponsesFactory = {

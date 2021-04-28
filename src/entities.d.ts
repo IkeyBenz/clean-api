@@ -1,10 +1,9 @@
-type User = {
-  id: string;
+interface User {
+  email: string;
   username: string;
 }
 
-type AuthCredentials = {
-  email: string;
+interface AuthCredentials {
   passwordHash: string;
   userId: string;
 }
